@@ -10,7 +10,11 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQLDialect
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 eureka:
   instance:
   client:
