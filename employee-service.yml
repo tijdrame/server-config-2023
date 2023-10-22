@@ -1,6 +1,6 @@
 spring:
   boot:
-    message: Hello, Employee Service
+    message: Hello, Employee Service Spring Cloud Demo.
   datasource:
     url: jdbc:mysql://localhost:3306/employee_db
     username: root
