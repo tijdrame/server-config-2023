@@ -4,17 +4,15 @@ spring:
     url: jdbc:mysql://localhost:3306/organization_db
     username: root
     password: passer
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    database-platform: org.hibernate.dialect.MySQLDialect
-
 server:
   port: 8083
 
