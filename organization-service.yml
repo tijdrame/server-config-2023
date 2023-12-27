@@ -14,11 +14,6 @@ management:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQLDialect
-  config:
-    import: optional:configserver:http://localhost:8888
-  cloud:
-    compatibility-verifier:
-      enabled: false
 
 server:
   port: 8083
